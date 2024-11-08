@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/backButton"
+        android:src="@drawable/ic_panah"
+        android:layout_gravity="start|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Hi!"
+            android:textColor="#6D4C41"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="temukan_doa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+
+
+    <TextView
+        android:layout_width="395dp"
+        android:layout_height="151dp"
+        android:layout_margin="8dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="ayo temukan doa yang kamu butuhkan ingat kami akan membantu kamu untuk memahami materi"
+        android:textColor="#6D4C41"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDoaMakanan"
+        android:layout_width="386dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/green"
+        android:padding="12dp"
+        android:text="Doa Makan"
+        android:textColor="#4E342E"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDoaSetelahMakan"
+        android:layout_width="386dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/green"
+        android:padding="12dp"
+        android:text="Doa Setelah Makan"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDoaTidur"
+        android:layout_width="386dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/green"
+        android:padding="12dp"
+        android:text="Doa Tidur"
+        android:textColor="#4E342E"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDoaBangunTidur"
+        android:layout_width="386dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/green"
+        android:padding="12dp"
+        android:text="Doa Bangun Tidur"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDoaBulanPuasa"
+        android:layout_width="386dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/green"
+        android:padding="20dp"
+        android:text="Doa Bulan Puasa"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+</LinearLayout>
+
+
