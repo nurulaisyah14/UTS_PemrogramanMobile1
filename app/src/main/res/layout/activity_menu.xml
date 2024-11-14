@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="Hi!"
-            android:textColor="#6D4C41"
+            android:textColor="#4E342E"
             android:textSize="20sp"
             tools:ignore="HardcodedText" />
     </androidx.appcompat.widget.Toolbar>
@@ -45,7 +45,7 @@
         android:gravity="center"
         android:padding="20dp"
         android:text="ayo temukan doa yang kamu butuhkan ingat kami akan membantu kamu untuk memahami materi"
-        android:textColor="#6D4C41"
+        android:textColor="#4E342E"
         android:textSize="20sp"
         tools:ignore="TextSizeCheck" />
 
@@ -67,6 +67,7 @@
         android:layout_height="75dp"
         android:layout_margin="8dp"
         android:backgroundTint="@color/green"
+        android:textColor="#4E342E"
         android:padding="12dp"
         android:text="Doa Setelah Makan"
         tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
@@ -90,6 +91,7 @@
         android:backgroundTint="@color/green"
         android:padding="12dp"
         android:text="Doa Bangun Tidur"
+        android:textColor="#4E342E"
         tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
 
     <com.google.android.material.button.MaterialButton
@@ -100,6 +102,7 @@
         android:backgroundTint="@color/green"
         android:padding="20dp"
         android:text="Doa Bulan Puasa"
+        android:textColor="#4E342E"
         tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
 </LinearLayout>
 

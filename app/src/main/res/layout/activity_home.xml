@@ -4,51 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/green"
-    android:padding="0dp">
+    android:background="@color/green">
 
-    <androidx.appcompat.widget.Toolbar tools:ignore="MissingConstraints"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent" />
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-    <!-- Grid Layout menggunakan ConstraintLayout untuk Kartu -->
+    <!-- Header Text -->
     <TextView
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium"
         android:text="Hii!"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        tools:ignore="HardcodedText" />
 
+    <!-- View All Text -->
     <TextView
         android:id="@+id/viewAll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="Lihat semua"
         android:textColor="@android:color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/headerText"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@id/headerText"
+        tools:ignore="HardcodedText" />
 
+    <!-- Grid Container -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gridContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerText"
-        app:background="@color/green">
+        app:layout_constraintTop_toBottomOf="@id/viewAll">
+
+        <!-- Guidelines for equal spacing -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
 
         <!-- Kartu 1: Doa Makan -->
         <com.google.android.material.card.MaterialCardView
@@ -58,7 +68,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="8dp"
-            app:layout_constraintEnd_toStartOf="@id/card2"
+            app:layout_constraintEnd_toStartOf="@id/verticalGuideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -67,15 +77,13 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="26dp"
-                tools:ignore="UseCompoundDrawables">
+                android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:src="@drawable/makan"
-                    android:contentDescription="TODO"
-                    tools:ignore="ContentDescription,HardcodedText" />
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -83,8 +91,7 @@
                     android:layout_marginTop="8dp"
                     android:text="Doa Makan"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="16sp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -97,23 +104,21 @@
             app:cardCornerRadius="12dp"
             app:cardElevation="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/card1"
-            app:layout_constraintTop_toTopOf="@id/card1">
+            app:layout_constraintStart_toEndOf="@id/verticalGuideline"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="26dp"
-                tools:ignore="UseCompoundDrawables">
+                android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:contentDescription="TODO"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:src="@drawable/sudah_makan"
-                    tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -121,8 +126,7 @@
                     android:layout_marginTop="8dp"
                     android:text="Doa Setelah Makan"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="16sp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -134,33 +138,30 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="8dp"
-            app:layout_constraintEnd_toStartOf="@id/card4"
+            app:layout_constraintEnd_toStartOf="@id/verticalGuideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card1">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="26dp"
-                tools:ignore="UseCompoundDrawables">
+                android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:contentDescription="TODO"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:src="@drawable/bangun_tidur"
-                    tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Doa Bangun Tidur"
+                    android:text="Doa Mau Tidur"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="16sp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -173,7 +174,7 @@
             app:cardCornerRadius="12dp"
             app:cardElevation="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/card3"
+            app:layout_constraintStart_toEndOf="@id/verticalGuideline"
             app:layout_constraintTop_toBottomOf="@id/card2">
 
             <LinearLayout
@@ -181,27 +182,23 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="26dp"
-                tools:ignore="UseCompoundDrawables">
+                android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:importantForAccessibility="no"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:src="@drawable/tidur"
-                    tools:ignore="ImageContrastCheck" />
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Doa Mau Tidur"
+                    android:text="Doa Bangun Tidur"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="16sp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
-

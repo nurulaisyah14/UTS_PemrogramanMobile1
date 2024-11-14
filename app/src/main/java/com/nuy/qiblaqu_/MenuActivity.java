@@ -23,7 +23,7 @@ public class MenuActivity extends AppCompatActivity {
 
         // Inisialisasi tombol
         @SuppressLint("CutPasteId") MaterialButton btnDoaMakanan = findViewById(R.id.btnDoaMakanan);
-        @SuppressLint("CutPasteId") MaterialButton btnDoaSetelahMakanan = findViewById(R.id.btnDoaMakanan);
+        @SuppressLint("CutPasteId") MaterialButton btnDoaSetelahMakan = findViewById(R.id.btnDoaSetelahMakan);
         MaterialButton btnDoaTidur = findViewById(R.id.btnDoaTidur);
         MaterialButton btnDoaBangunTidur = findViewById(R.id.btnDoaBangunTidur);
         MaterialButton btnDoaBulanPuasa = findViewById(R.id.btnDoaBulanPuasa);
@@ -34,7 +34,7 @@ public class MenuActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnDoaSetelahMakanan.setOnClickListener(v -> {
+        btnDoaSetelahMakan.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, Doa2Activity.class);
             startActivity(intent);
         });
