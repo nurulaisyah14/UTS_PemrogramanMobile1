@@ -39,11 +39,12 @@ Aplikasi ini bertujuan untuk membantu pengguna dalam mengakses bacaan doa sehari
 ### Fitur Utama:
 Berikut adalah penjelasan secara detail dari masing-masing fitur yang ada pada aplikasi "QiblaQu" ini, berdasarkan gambar yang diberikan:
 1. *Landing Page:*
-![image](https://github.com/user-attachments/assets/4d536491-d42b-48c2-a431-04ba4fb7bba4)
+![image](https://github.com/user-attachments/assets/e263686e-f8ad-4118-aa38-0ff210b0dbea)
+
 - Desain Minimalis: Halaman pembuka aplikasi ini memiliki desain yang sederhana dan minimalis dengan latar belakang berwarna hijau. Di tengah layar terdapat logo aplikasi bertuliskan "QiblaQu" dengan font artistik, memberikan kesan elegan dan islami.
 - Fungsi: Halaman ini berfungsi sebagai tampilan awal saat pengguna membuka aplikasi. Biasanya, halaman seperti ini akan muncul sebentar sebelum masuk ke layar utama aplikasi.
 2. *Home Screen (Layar Utama):*
-![image](https://github.com/user-attachments/assets/c353c867-69fa-453e-a977-97fe61a7e786)
+![image](https://github.com/user-attachments/assets/604954e7-c31e-44ed-9a60-a9356b92af60)
   - Header: Di bagian atas, ada header berwarna hijau dengan tulisan "Hi!!" yang memberikan sapaan informal kepada pengguna, membuat aplikasi terasa lebih ramah.
   - Daftar Doa: Di bawah header, terdapat daftar beberapa kartu doa seperti:
     * Doa Makan
@@ -52,7 +53,7 @@ Berikut adalah penjelasan secara detail dari masing-masing fitur yang ada pada a
     * Doa Bangun Tidur
   - Navigasi Doa: Pengguna dapat mengklik setiap kartu doa untuk membaca teks lengkap doa tersebut beserta artinya. Dengan tampilan berupa kartu ini, pengguna bisa dengan cepat memilih doa yang ingin dibaca.
 3.  *Menu - Temukan Doa:*
-![image](https://github.com/user-attachments/assets/b0983ae2-8a44-4f7d-bc66-dc0bd6d42f25)
+![image](https://github.com/user-attachments/assets/c40bf478-366d-4d64-8c1c-d37017cc88db)
   - Judul Halaman: Bagian header tetap dengan sapaan "Hi!!" dan tambahan teks "Temukan Doa Favorite Mu!" untuk memotivasi pengguna mencari doa favorit mereka.
   - Pesan Motivasi: Di bawah header, ada kotak teks berwarna hijau yang memberikan pesan kepada pengguna, "Ayo temukan Doa yang kamu butuhkan! Ingat, kami akan membantu kamu untuk memahami materi." Pesan ini memberikan dorongan kepada pengguna agar lebih semangat dalam belajar doa.
   - Daftar Kategori Doa: Setelah pesan motivasi, terdapat beberapa tombol pilihan kategori doa, seperti:
@@ -63,6 +64,11 @@ Berikut adalah penjelasan secara detail dari masing-masing fitur yang ada pada a
     * Doa Buka Puasa
   - Navigasi Cepat: Tombol kategori ini memudahkan pengguna untuk langsung menuju doa yang mereka inginkan tanpa harus mencari di daftar yang panjang. Saat tombol diklik, pengguna akan diarahkan ke halaman isi doa yang dipilih.
 4.  *Isi Doa (Detail Setiap Doa):*
+![image](https://github.com/user-attachments/assets/e85f8d4f-b31f-42b6-b3cd-6ba002f9a9de)
+![image](https://github.com/user-attachments/assets/618246a8-0ff4-4780-9720-ce4dfec38865)
+![image](https://github.com/user-attachments/assets/3e0cfa8f-6086-4628-867b-fa997b6874f6)
+![image](https://github.com/user-attachments/assets/1b12ee5b-72a3-41f3-883e-fab4ae5d778b)
+![image](https://github.com/user-attachments/assets/bf4ce0e8-f439-4cc3-82df-463a2bd7ec47)
   - Judul Halaman: Di bagian atas layar tetap ada header hijau dengan tulisan "Hi!!" dan nama doa yang sedang dibaca (misalnya, "Doa Makan").
   - Teks Doa Arab dan Terjemahan: Setiap halaman doa menampilkan:
   - Teks Doa dalam Bahasa Arab: Di bagian tengah, terdapat teks doa dalam tulisan Arab, yang merupakan teks asli doa. Hal ini memudahkan pengguna yang ingin membaca atau menghafal doa dalam bahasa aslinya.
